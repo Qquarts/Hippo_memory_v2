@@ -1,4 +1,4 @@
-# 🔗 Blockchain Registry - Hippocampus Memory System v1.0.0
+# 🔗 Blockchain Registry - Hippocampus Memory System v2.0.0
 
 All files are signed on the PHAM blockchain for contribution tracking and integrity verification.
 

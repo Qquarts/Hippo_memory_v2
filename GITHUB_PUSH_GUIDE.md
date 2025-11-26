@@ -5,7 +5,7 @@ Complete guide to push this release to GitHub.
 ## 📋 Current Status
 
 ✅ All files committed (4 commits)  
-✅ Tag v1.0.0 created  
+✅ Tag v2.0.0 created  
 ✅ All tests passing (7/7)  
 ✅ Documentation complete  
 ✅ Git repository initialized  
@@ -47,9 +47,9 @@ After pushing, create a release:
 
 1. Go to: https://github.com/Qquarts/Hippo_memory/releases
 2. Click "Create a new release"
-3. **Tag**: `v1.0.0` (should appear if tag was pushed)
-4. **Release title**: `🧠 Hippocampus Memory System v1.0.0`
-5. **Description**: Copy content from `RELEASE_NOTES_v1.0.0.md`
+3. **Tag**: `v2.0.0` (should appear if tag was pushed)
+4. **Release title**: `🧠 Hippocampus Memory System v2.0.0`
+5. **Description**: Copy content from `RELEASE_NOTES_v2.0.0.md`
 6. **Attach files** (optional):
    - No binaries needed (all source code)
 7. Check "Set as latest release"
@@ -62,7 +62,7 @@ Total Files: 25
 ├── Documentation (5 files, 23 KB)
 │   ├── README.md
 │   ├── CHANGELOG.md
-│   ├── RELEASE_NOTES_v1.0.0.md
+│   ├── RELEASE_NOTES_v2.0.0.md
 │   ├── INSTALLATION.md
 │   └── LICENSE
 ├── Core Engine (3 files, ~8,800 lines)
@@ -159,10 +159,10 @@ git push origin master
 
 ```bash
 # Delete and recreate
-git tag -d v1.0.0
-git push origin :refs/tags/v1.0.0
-git tag -a v1.0.0 -m "Release v1.0.0"
-git push origin v1.0.0
+git tag -d v2.0.0
+git push origin :refs/tags/v2.0.0
+git tag -a v2.0.0 -m "Release v2.0.0"
+git push origin v2.0.0
 ```
 
 ---

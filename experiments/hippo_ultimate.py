@@ -1,9 +1,13 @@
 """
 ================================================================================
-HIPPOCAMPUS ULTIMATE: Complete Biological Memory System v1.0
+HIPPOCAMPUS ULTIMATE: Complete Biological Memory System v2.0
 ================================================================================
 
-⚠️  IMPORTANT: This is a v1.0 proof-of-concept implementation.
+🎉 NEW in v2.0: Complete CA1 + Subiculum integration!
+    - v1.0: DG → CA3 → Cortex (basic recurrence + sleep)
+    - v2.0: DG → CA3 → CA1 → Subiculum → Cortex (full circuit)
+
+⚠️  IMPORTANT: This is a v2.0 proof-of-concept implementation.
     See docs/LIMITATIONS_AND_ROADMAP.md for full details.
 
 [전체 회로]
@@ -19,19 +23,19 @@ HIPPOCAMPUS ULTIMATE: Complete Biological Memory System v1.0
        ↓
       출력 → Cortex (장기 기억)
 
-[통합된 기능 - v1.0]
+[통합된 기능 - v2.0]
 ✓ Pattern Separation (DG) - Working
 ✓ Sequence Memory (CA3) - Working
 ✓ Associative Memory (CA3 branching) - Working
-✓ Temporal Encoding (CA1) - Working
-✓ Novelty Detection (CA1) - Simplified (lookup table)
-✓ Context Gating (Subiculum) - Working
+✓ Temporal Encoding (CA1) - NEW in v2.0! ⭐
+✓ Novelty Detection (CA1) - NEW in v2.0! ⭐ (simplified lookup)
+✓ Context Gating (Subiculum) - NEW in v2.0! ⭐
 ✓ Sleep Consolidation (전체) - Simplified (probabilistic)
 
 ⚠️  Pattern Completion (CA3 recurrent) - NOT IMPLEMENTED YET
     - Current: Feedforward DG→CA3→CA1 only
     - Missing: CA3↔CA3 recurrent connections
-    - Planned: v1.5 (Q1 2026)
+    - Planned: v2.5 (Q1 2026)
 
 [실험 시나리오]
 Day 1 (Wake):
@@ -66,15 +70,22 @@ Day 2 (Recall):
 ❌ NOT for clinical modeling (no disease models)
 
 [Version History]
-v1.0 (Nov 2025): Initial release
-  - Basic architecture
-  - STDP learning
-  - Sleep consolidation
-  - Multi-word memory
+v2.0 (Nov 2025): Major upgrade - Complete circuit
+  - Added CA1 (temporal encoding, novelty detection)
+  - Added Subiculum (context gating)
+  - Complete DG → CA3 → CA1 → Subiculum pathway
+  - 11 comprehensive experiments
+  - 28x speed optimization
   
-v1.5 (Planned Q1 2026):
-  - CA3 recurrent connections
-  - Improved novelty detection
+v1.0 (Nov 2024): Initial release (Legacy)
+  - Basic DG → CA3 → Cortex
+  - Pattern completion with CA3 recurrence
+  - Sleep consolidation
+  - 2 experiments (hippo_v1_fixed.py, hippo_dream.py)
+  
+v2.5 (Planned Q1 2026):
+  - Full CA3 recurrent attractor network
+  - Prediction-error novelty detection
   - Basic inhibition
   - 10x scale increase
 

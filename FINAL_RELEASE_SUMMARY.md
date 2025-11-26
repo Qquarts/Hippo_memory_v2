@@ -1,4 +1,4 @@
-# 🎉 Hippocampus Memory System v1.0.0 - FINAL RELEASE
+# 🎉 Hippocampus Memory System v2.0.0 - FINAL RELEASE
 
 ## ✅ 완료 체크리스트
 
@@ -11,7 +11,7 @@
 ### 📚 문서화
 - [x] README.md (6.1 KB) - 프로젝트 소개
 - [x] CHANGELOG.md (5.8 KB) - 변경 이력
-- [x] RELEASE_NOTES_v1.0.0.md (7.8 KB) - 릴리즈 노트
+- [x] RELEASE_NOTES_v2.0.0.md (7.8 KB) - 릴리즈 노트
 - [x] INSTALLATION.md (2.2 KB) - 설치 가이드
 - [x] GITHUB_PUSH_GUIDE.md - 푸시 가이드
 - [x] PROJECT_SUMMARY.md - 프로젝트 요약
@@ -36,7 +36,7 @@
 
 ### 🔧 Git 관리
 - [x] 6개 커밋 완료
-- [x] Tag v1.0.0 생성
+- [x] Tag v2.0.0 생성
 - [x] .gitignore 설정
 - [x] Remote 추가 (GitHub)
 
@@ -98,9 +98,9 @@ git push origin --tags
 
 # 4. GitHub에서 Release 생성
 # https://github.com/Qquarts/Hippo_memory/releases/new
-# - Tag: v1.0.0
-# - Title: 🧠 Hippocampus Memory System v1.0.0
-# - Body: RELEASE_NOTES_v1.0.0.md 내용 복사
+# - Tag: v2.0.0
+# - Title: 🧠 Hippocampus Memory System v2.0.0
+# - Body: RELEASE_NOTES_v2.0.0.md 내용 복사
 ```
 
 ---
@@ -112,7 +112,7 @@ hippo_release_v1.0/
 ├── 📄 Documentation (8 files, ~30 KB)
 │   ├── README.md
 │   ├── CHANGELOG.md  
-│   ├── RELEASE_NOTES_v1.0.0.md
+│   ├── RELEASE_NOTES_v2.0.0.md
 │   ├── INSTALLATION.md
 │   ├── GITHUB_PUSH_GUIDE.md
 │   ├── PROJECT_SUMMARY.md

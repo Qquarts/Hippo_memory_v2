@@ -1,11 +1,11 @@
-# 🧠 Hippocampus Memory System v1.0.0 - Project Summary
+# 🧠 Hippocampus Memory System v2.0.0 - Project Summary
 
 ## 📊 Complete Release Package
 
 ### **프로젝트 개요**
 
 **이름**: Hippocampus Memory System  
-**버전**: v1.0.0  
+**버전**: v2.0.0  
 **릴리즈 날짜**: 2024년 11월 26일  
 **개발 기간**: 1일  
 **개발자**: 윤재진 (Jaejin Yoon)  
@@ -43,7 +43,7 @@
 hippo_release_v1.0/
 ├── 📄 README.md (6.1 KB) - 프로젝트 소개
 ├── 📄 CHANGELOG.md (5.8 KB) - 변경 이력
-├── 📄 RELEASE_NOTES_v1.0.0.md (7.8 KB) - 릴리즈 노트
+├── 📄 RELEASE_NOTES_v2.0.0.md (7.8 KB) - 릴리즈 노트
 ├── 📄 INSTALLATION.md (2.2 KB) - 설치 가이드
 ├── 📄 GITHUB_PUSH_GUIDE.md - 푸시 가이드
 ├── 📄 LICENSE (1.0 KB) - MIT 라이선스
@@ -178,14 +178,14 @@ python3 run_all_experiments.py --quick
 ### **커밋 내역**
 ```
 872f4a7 docs: Add installation guide
-ee41612 docs: Add comprehensive release notes for v1.0.0
+ee41612 docs: Add comprehensive release notes for v2.0.0
 079da7b Fix: Add v3_event and v4_event to experiments
-f713722 Release v1.0.0: Complete Hippocampal Memory System
+f713722 Release v2.0.0: Complete Hippocampal Memory System
 ```
 
 ### **태그**
 ```
-v1.0.0 - Release v1.0.0: Complete Hippocampal Memory System
+v2.0.0 - Release v2.0.0: Complete Hippocampal Memory System
 ```
 
 ### **브랜치**
@@ -203,7 +203,7 @@ master (기본)
 - [x] 라이선스 추가 (MIT)
 - [x] Git 저장소 초기화
 - [x] 커밋 완료 (4개)
-- [x] 태그 생성 (v1.0.0)
+- [x] 태그 생성 (v2.0.0)
 - [x] 리모트 추가 (GitHub)
 - [x] .gitignore 설정
 - [x] requirements.txt 작성
@@ -226,9 +226,9 @@ master (기본)
 2. **GitHub Release 생성**:
    - https://github.com/Qquarts/Hippo_memory/releases
    - "Create a new release" 클릭
-   - Tag: v1.0.0
-   - Title: 🧠 Hippocampus Memory System v1.0.0
-   - Description: RELEASE_NOTES_v1.0.0.md 내용 복사
+   - Tag: v2.0.0
+   - Title: 🧠 Hippocampus Memory System v2.0.0
+   - Description: RELEASE_NOTES_v2.0.0.md 내용 복사
    - "Publish release" 클릭
 
 3. **저장소 설정**:

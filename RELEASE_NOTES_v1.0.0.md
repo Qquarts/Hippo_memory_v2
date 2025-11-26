@@ -1,4 +1,4 @@
-# 🧠 Hippocampus Memory System v1.0.0
+# 🧠 Hippocampus Memory System v2.0.0
 
 **Release Date**: November 26, 2024
 

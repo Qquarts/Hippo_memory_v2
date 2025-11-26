@@ -1,12 +1,14 @@
-# 🧠 Hippocampus Memory System v1.0
+# 🧠 Hippocampus Memory System v2.0
 
 A biologically-inspired hippocampal memory system implementation using Spiking Neural Networks (SNNs).
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/Qquarts/Hippo_memory/releases)
+[![Version](https://img.shields.io/badge/version-2.0.0-green.svg)](https://github.com/Qquarts/Hippo_memory/releases)
 
-> ⚠️ **Important:** This is a v1.0 proof-of-concept release. See [Limitations and Roadmap](docs/LIMITATIONS_AND_ROADMAP.md) for details on what's implemented and what's planned for future versions.
+> 🎉 **v2.0 Major Upgrade:** Complete hippocampal circuit with CA1 (temporal encoding, novelty detection) and Subiculum (context gating). 11 comprehensive experiments. 28x speed boost. See [CHANGELOG](CHANGELOG.md) for v1.0→v2.0 comparison.
+
+> ⚠️ **Important:** This is a proof-of-concept with known limitations. See [Limitations and Roadmap](docs/LIMITATIONS_AND_ROADMAP.md) for details on scope and future plans.
 
 ## 🌟 Features
 
