@@ -1,9 +1,12 @@
-# 🧠 Hippocampus Memory System
+# 🧠 Hippocampus Memory System v1.0
 
-A biologically plausible hippocampal memory system implementation using Spiking Neural Networks (SNNs).
+A biologically-inspired hippocampal memory system implementation using Spiking Neural Networks (SNNs).
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/Qquarts/Hippo_memory/releases)
+
+> ⚠️ **Important:** This is a v1.0 proof-of-concept release. See [Limitations and Roadmap](docs/LIMITATIONS_AND_ROADMAP.md) for details on what's implemented and what's planned for future versions.
 
 ## 🌟 Features
 
@@ -12,10 +15,10 @@ A biologically plausible hippocampal memory system implementation using Spiking 
 Input → EC → DG → CA3 → CA1 → Subiculum → Output
 ```
 
-- **DG (Dentate Gyrus)**: Pattern separation with sparse coding
-- **CA3 (Cornu Ammonis 3)**: Associative memory with recurrent connections
-- **CA1 (Cornu Ammonis 1)**: Temporal encoding & novelty detection
-- **Subiculum**: Context-based output gating
+- **DG (Dentate Gyrus)**: Pattern separation with sparse coding ✅
+- **CA3 (Cornu Ammonis 3)**: Associative memory ⚠️ (recurrent connections planned for v1.5)
+- **CA1 (Cornu Ammonis 1)**: Temporal encoding & novelty detection ✅
+- **Subiculum**: Context-based output gating ✅
 
 ### Key Capabilities
 
@@ -214,11 +217,48 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+## ⚠️ Limitations & Scope
+
+**This is a v1.0 proof-of-concept. Please understand the scope:**
+
+### ✅ What It Does Well
+- Clean, modular architecture (DG → CA3 → CA1 → Subiculum)
+- Working STDP learning and sleep consolidation
+- Clear demonstration of hippocampal circuit principles
+- Extensible design for future enhancements
+
+### ⚠️ Known Limitations
+- **CA3 Recurrence**: Feedforward only (no CA3↔CA3 yet) - *Planned v1.5*
+- **Scale**: Toy size (~20 neurons total, not 1M+ like real brains)
+- **Novelty Detection**: Simplified lookup (not full prediction-error)
+- **Inhibition**: No GABA interneurons yet
+- **Noise**: Clean inputs only (no variability)
+
+### 📊 Biological Accuracy
+- **Architecture**: ⭐⭐⭐⭐⭐ (5/5) - Structure matches hippocampus
+- **Dynamics**: ⭐⭐⭐ (3/5) - HH + STDP, but simplified
+- **Scale**: ⭐ (1/5) - Toy demonstration size
+- **Overall**: ~35-40% biological accuracy, 70% functional completeness
+
+**For full details, see:** [docs/LIMITATIONS_AND_ROADMAP.md](docs/LIMITATIONS_AND_ROADMAP.md)
+
+### 🎯 Best Use Cases
+✅ Educational demonstrations  
+✅ Module architecture specification for Qquarts/PHAM  
+✅ Baseline for future development  
+✅ Proof of concept  
+
+❌ NOT for neuroscience research papers (yet)  
+❌ NOT for large-scale applications (scale too small)  
+❌ NOT for clinical/medical modeling (too simplified)  
+
+---
+
 ## 🙏 Acknowledgments
 
 - Inspired by biological hippocampal circuits
-- Based on computational neuroscience research
-- Optimized for practical AI applications
+- Based on computational neuroscience research (Marr 1971, O'Keefe 1979, Buzsáki 1989, Eichenbaum 2014)
+- Designed as a modular component for the Qquarts AI ecosystem
 
 ## 📧 Contact
 

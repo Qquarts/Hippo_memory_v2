@@ -1,7 +1,10 @@
 """
 ================================================================================
-HIPPOCAMPUS ULTIMATE: Complete Biological Memory System
+HIPPOCAMPUS ULTIMATE: Complete Biological Memory System v1.0
 ================================================================================
+
+⚠️  IMPORTANT: This is a v1.0 proof-of-concept implementation.
+    See docs/LIMITATIONS_AND_ROADMAP.md for full details.
 
 [전체 회로]
 입력 → EC (Entorhinal Cortex)
@@ -16,15 +19,19 @@ HIPPOCAMPUS ULTIMATE: Complete Biological Memory System
        ↓
       출력 → Cortex (장기 기억)
 
-[통합된 기능]
-✓ Pattern Separation (DG)
-✓ Pattern Completion (CA3)
-✓ Sequence Memory (CA3)
-✓ Associative Memory (CA3 branching)
-✓ Temporal Encoding (CA1)
-✓ Novelty Detection (CA1)
-✓ Context Gating (Subiculum)
-✓ Sleep Consolidation (전체)
+[통합된 기능 - v1.0]
+✓ Pattern Separation (DG) - Working
+✓ Sequence Memory (CA3) - Working
+✓ Associative Memory (CA3 branching) - Working
+✓ Temporal Encoding (CA1) - Working
+✓ Novelty Detection (CA1) - Simplified (lookup table)
+✓ Context Gating (Subiculum) - Working
+✓ Sleep Consolidation (전체) - Simplified (probabilistic)
+
+⚠️  Pattern Completion (CA3 recurrent) - NOT IMPLEMENTED YET
+    - Current: Feedforward DG→CA3→CA1 only
+    - Missing: CA3↔CA3 recurrent connections
+    - Planned: v1.5 (Q1 2026)
 
 [실험 시나리오]
 Day 1 (Wake):
@@ -32,13 +39,46 @@ Day 1 (Wake):
   - 맥락 학습: "animal" context
 
 Night 1 (Sleep):
-  - Theta replay
-  - 선택적 강화
+  - Theta replay (빈도 기반, 확률적)
+  - 선택적 강화 (consolidate factor)
 
 Day 2 (Recall):
   - Cue 제시
   - 맥락 기반 출력
-  - 새로운 단어 감지
+  - 새로운 단어 감지 (리스트 매칭)
+
+[현실 체크]
+✅ Architecture: 생물학적으로 영감받은 구조
+✅ Data Flow: DG→CA3→CA1→Subiculum 경로 명확
+✅ Learning: STDP 기반 시냅스 가소성
+⚠️  Scale: 장난감 수준 (단어당 2-3 뉴런)
+⚠️  Inhibition: 억제 회로 없음 (GABA interneurons 없음)
+⚠️  Noise: 깨끗한 입력만 (노이즈/변동성 없음)
+⚠️  Recurrence: CA3 재귀 연결 없음 (feedforward only)
+
+[Use Cases]
+✅ Educational demonstrations
+✅ Module architecture specification
+✅ Proof of concept for Qquarts/PHAM
+✅ Baseline for future development
+❌ NOT for neuroscience research (too simplified)
+❌ NOT for large-scale applications (toy scale)
+❌ NOT for clinical modeling (no disease models)
+
+[Version History]
+v1.0 (Nov 2025): Initial release
+  - Basic architecture
+  - STDP learning
+  - Sleep consolidation
+  - Multi-word memory
+  
+v1.5 (Planned Q1 2026):
+  - CA3 recurrent connections
+  - Improved novelty detection
+  - Basic inhibition
+  - 10x scale increase
+
+See: docs/LIMITATIONS_AND_ROADMAP.md
 
 ================================================================================
 """
