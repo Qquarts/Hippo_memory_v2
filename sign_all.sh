@@ -1,25 +1,136 @@
 #!/bin/bash
-# Blockchain signing script for all files
+################################################################################
+# PHAM Blockchain Signing Script - Enhanced Version
+################################################################################
+#
+# 모든 핵심 파일을 블록체인에 서명합니다.
+# 
+# Usage: ./sign_all.sh
+#
+################################################################################
 
-AUTHOR="Jaejin Yoon"
+set -e  # 에러 시 종료
 
-# Core files
-python3 pham_sign_v4.py core/v3_event.py --author "$AUTHOR" --desc "Standard HH neuron with RK4 integration"
+# 색상 정의
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+CYAN='\033[0;36m'
+BOLD='\033[1m'
+NC='\033[0m' # No Color
 
-# Experiments
-python3 pham_sign_v4.py experiments/hippo_ultimate.py --author "$AUTHOR" --desc "Complete hippocampal circuit integration"
-python3 pham_sign_v4.py experiments/hippo_dream_final.py --author "$AUTHOR" --desc "Wake-Sleep-Recall cycle with theta replay"
-python3 pham_sign_v4.py experiments/hippo_seq_v2_fast.py --author "$AUTHOR" --desc "Multi-sequence memory with 9x speedup"
-python3 pham_sign_v4.py experiments/hippo_seq_v3_fast.py --author "$AUTHOR" --desc "Long sequence memory with 28x speedup"
-python3 pham_sign_v4.py experiments/hippo_alphabet.py --author "$AUTHOR" --desc "26-letter memory system"
-python3 pham_sign_v4.py experiments/hippo_words.py --author "$AUTHOR" --desc "Word sequence memory (CAT, DOG, etc)"
-python3 pham_sign_v4.py experiments/hippo_branching.py --author "$AUTHOR" --desc "Winner-Take-All decision making"
-python3 pham_sign_v4.py experiments/hippo_branching_v2.py --author "$AUTHOR" --desc "Parallel branching activation"
-python3 pham_sign_v4.py experiments/hippo_ca1_temporal.py --author "$AUTHOR" --desc "CA1 temporal encoding with time cells"
-python3 pham_sign_v4.py experiments/hippo_ca1_novelty.py --author "$AUTHOR" --desc "CA1 novelty detection system"
-python3 pham_sign_v4.py experiments/hippo_subiculum_gate.py --author "$AUTHOR" --desc "Subiculum context-based gating"
+# 카운터
+TOTAL=0
+SUCCESS=0
+FAILED=0
 
 echo ""
-echo "==================================="
-echo "✅ All files signed on blockchain!"
-echo "==================================="
+echo "════════════════════════════════════════════════════════════════════════"
+echo -e "${BOLD}${CYAN}🔗 PHAM BLOCKCHAIN SIGNING PROCESS${NC}"
+echo "════════════════════════════════════════════════════════════════════════"
+echo ""
+
+# Core 엔진 파일
+echo -e "${BOLD}${BLUE}[1/3] Core Engine Files${NC}"
+echo "────────────────────────────────────────────────────────────────────────"
+
+FILES_CORE=(
+    "experiments/v3_event.py:Jaejin Yoon:Standard HH neuron with RK4 integration"
+    "experiments/v4_event.py:Jaejin Yoon:High-speed HH neuron with 28x speedup"
+)
+
+for item in "${FILES_CORE[@]}"; do
+    IFS=':' read -r file author desc <<< "$item"
+    TOTAL=$((TOTAL + 1))
+    
+    if [ -f "$file" ]; then
+        echo -e "${CYAN}[${TOTAL}]${NC} Signing: ${BOLD}$(basename $file)${NC}"
+        echo "    Author: $author"
+        echo "    Desc:   $desc"
+        
+        if python3 pham_sign_v4.py "$file" --author "$author" --desc "$desc" > /dev/null 2>&1; then
+            SUCCESS=$((SUCCESS + 1))
+            echo -e "    ${GREEN}✓ Success${NC}"
+        else
+            FAILED=$((FAILED + 1))
+            echo -e "    ${RED}✗ Failed${NC}"
+        fi
+    else
+        FAILED=$((FAILED + 1))
+        echo -e "${RED}✗ File not found: $file${NC}"
+    fi
+    echo ""
+done
+
+# Experiment 파일
+echo -e "${BOLD}${BLUE}[2/3] Experiment Files${NC}"
+echo "────────────────────────────────────────────────────────────────────────"
+
+FILES_EXP=(
+    "experiments/hippo_ultimate.py:Jaejin Yoon:Complete hippocampal circuit integration"
+    "experiments/hippo_dream_final.py:Jaejin Yoon:Sleep consolidation with theta replay"
+    "experiments/hippo_seq_v2_fast.py:Jaejin Yoon:Multi-sequence memory with 9x speedup"
+    "experiments/hippo_seq_v3_fast.py:Jaejin Yoon:Long sequence A-H with 28x speedup"
+    "experiments/hippo_alphabet.py:Jaejin Yoon:26-letter alphabet memory storage"
+    "experiments/hippo_words.py:Jaejin Yoon:Word sequence memory (CAT DOG BAT RAT)"
+    "experiments/hippo_branching.py:Jaejin Yoon:Winner-Take-All branching (CAR vs CAT)"
+    "experiments/hippo_branching_v2.py:Jaejin Yoon:Parallel branching (ANT ARC AIM)"
+    "experiments/hippo_ca1_temporal.py:Jaejin Yoon:CA1 temporal encoding experiment"
+    "experiments/hippo_ca1_novelty.py:Jaejin Yoon:CA1 novelty detection experiment"
+    "experiments/hippo_subiculum_gate.py:Jaejin Yoon:Subiculum context gating experiment"
+)
+
+for item in "${FILES_EXP[@]}"; do
+    IFS=':' read -r file author desc <<< "$item"
+    TOTAL=$((TOTAL + 1))
+    
+    if [ -f "$file" ]; then
+        echo -e "${CYAN}[${TOTAL}]${NC} Signing: ${BOLD}$(basename $file)${NC}"
+        echo "    Author: $author"
+        echo "    Desc:   $desc"
+        
+        if python3 pham_sign_v4.py "$file" --author "$author" --desc "$desc" > /dev/null 2>&1; then
+            SUCCESS=$((SUCCESS + 1))
+            echo -e "    ${GREEN}✓ Success${NC}"
+        else
+            FAILED=$((FAILED + 1))
+            echo -e "    ${RED}✗ Failed${NC}"
+        fi
+    else
+        FAILED=$((FAILED + 1))
+        echo -e "${RED}✗ File not found: $file${NC}"
+    fi
+    echo ""
+done
+
+# 최종 결과
+echo "════════════════════════════════════════════════════════════════════════"
+echo -e "${BOLD}${CYAN}📊 SIGNING SUMMARY${NC}"
+echo "════════════════════════════════════════════════════════════════════════"
+echo ""
+echo -e "  ${GREEN}✓ Success:${NC} $SUCCESS / $TOTAL"
+echo -e "  ${RED}✗ Failed:${NC}  $FAILED / $TOTAL"
+echo ""
+
+if [ $FAILED -eq 0 ]; then
+    echo -e "${GREEN}${BOLD}🎉 All files signed successfully!${NC}"
+else
+    echo -e "${YELLOW}⚠️  Some files failed to sign. Check the output above.${NC}"
+fi
+
+echo ""
+echo "════════════════════════════════════════════════════════════════════════"
+echo -e "${BOLD}${BLUE}[3/3] Verification${NC}"
+echo "════════════════════════════════════════════════════════════════════════"
+echo ""
+echo "Running chain viewer to verify..."
+echo ""
+
+python3 view_chains.py
+
+echo ""
+echo "════════════════════════════════════════════════════════════════════════"
+echo -e "${GREEN}${BOLD}✅ BLOCKCHAIN SIGNING COMPLETE!${NC}"
+echo "════════════════════════════════════════════════════════════════════════"
+echo ""
