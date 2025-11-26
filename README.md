@@ -6,6 +6,8 @@ A biologically-inspired hippocampal memory system implementation using Spiking N
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Version](https://img.shields.io/badge/version-2.0.0-green.svg)](https://github.com/Qquarts/Hippo_memory/releases)
 
+> 🌐 **Language:** [English](README.md) | [한국어 (Korean)](README_KR.md)
+
 > 🎉 **v2.0 Major Upgrade:** Complete hippocampal circuit with CA1 (temporal encoding, novelty detection) and Subiculum (context gating). 11 comprehensive experiments. 28x speed boost. See [CHANGELOG](CHANGELOG.md) for v1.0→v2.0 comparison.
 
 > ⚠️ **Important:** This is a proof-of-concept with known limitations. See [Limitations and Roadmap](docs/LIMITATIONS_AND_ROADMAP.md) for details on scope and future plans.
