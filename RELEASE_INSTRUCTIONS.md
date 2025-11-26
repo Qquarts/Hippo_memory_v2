@@ -237,7 +237,7 @@ git checkout v2.0.0
 All 13 core files are signed with PHAM blockchain:
 - Grade: A_HIGH (13/13 files)
 - Score: 0.9998 ~ 1.0000
-- Author: Jaejin Yoon
+- Author: GNJz
 - View chains: `python3 view_chains.py`
 
 ---
@@ -245,8 +245,8 @@ All 13 core files are signed with PHAM blockchain:
 ## 📚 Citation
 
 ```bibtex
-@software{yoon2025hippocampus,
-  author = {Yoon, Jaejin},
+@software{gnjz2025hippocampus,
+  author = {GNJz},
   title = {Hippocampus Memory System: A Biologically-Inspired SNN Implementation},
   year = {2025},
   version = {1.0.0},

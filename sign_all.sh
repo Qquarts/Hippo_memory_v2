@@ -36,8 +36,8 @@ echo -e "${BOLD}${BLUE}[1/3] Core Engine Files${NC}"
 echo "────────────────────────────────────────────────────────────────────────"
 
 FILES_CORE=(
-    "experiments/v3_event.py:Jaejin Yoon:Standard HH neuron with RK4 integration"
-    "experiments/v4_event.py:Jaejin Yoon:High-speed HH neuron with 28x speedup"
+    "experiments/v3_event.py:GNJz:Standard HH neuron with RK4 integration"
+    "experiments/v4_event.py:GNJz:High-speed HH neuron with 28x speedup"
 )
 
 for item in "${FILES_CORE[@]}"; do
@@ -68,17 +68,17 @@ echo -e "${BOLD}${BLUE}[2/3] Experiment Files${NC}"
 echo "────────────────────────────────────────────────────────────────────────"
 
 FILES_EXP=(
-    "experiments/hippo_ultimate.py:Jaejin Yoon:Complete hippocampal circuit integration"
-    "experiments/hippo_dream_final.py:Jaejin Yoon:Sleep consolidation with theta replay"
-    "experiments/hippo_seq_v2_fast.py:Jaejin Yoon:Multi-sequence memory with 9x speedup"
-    "experiments/hippo_seq_v3_fast.py:Jaejin Yoon:Long sequence A-H with 28x speedup"
-    "experiments/hippo_alphabet.py:Jaejin Yoon:26-letter alphabet memory storage"
-    "experiments/hippo_words.py:Jaejin Yoon:Word sequence memory (CAT DOG BAT RAT)"
-    "experiments/hippo_branching.py:Jaejin Yoon:Winner-Take-All branching (CAR vs CAT)"
-    "experiments/hippo_branching_v2.py:Jaejin Yoon:Parallel branching (ANT ARC AIM)"
-    "experiments/hippo_ca1_temporal.py:Jaejin Yoon:CA1 temporal encoding experiment"
-    "experiments/hippo_ca1_novelty.py:Jaejin Yoon:CA1 novelty detection experiment"
-    "experiments/hippo_subiculum_gate.py:Jaejin Yoon:Subiculum context gating experiment"
+    "experiments/hippo_ultimate.py:GNJz:Complete hippocampal circuit integration"
+    "experiments/hippo_dream_final.py:GNJz:Sleep consolidation with theta replay"
+    "experiments/hippo_seq_v2_fast.py:GNJz:Multi-sequence memory with 9x speedup"
+    "experiments/hippo_seq_v3_fast.py:GNJz:Long sequence A-H with 28x speedup"
+    "experiments/hippo_alphabet.py:GNJz:26-letter alphabet memory storage"
+    "experiments/hippo_words.py:GNJz:Word sequence memory (CAT DOG BAT RAT)"
+    "experiments/hippo_branching.py:GNJz:Winner-Take-All branching (CAR vs CAT)"
+    "experiments/hippo_branching_v2.py:GNJz:Parallel branching (ANT ARC AIM)"
+    "experiments/hippo_ca1_temporal.py:GNJz:CA1 temporal encoding experiment"
+    "experiments/hippo_ca1_novelty.py:GNJz:CA1 novelty detection experiment"
+    "experiments/hippo_subiculum_gate.py:GNJz:Subiculum context gating experiment"
 )
 
 for item in "${FILES_EXP[@]}"; do

@@ -284,7 +284,7 @@ Success Rate: 100%
 
 **🧠 "Bridging Biological and Artificial Intelligence"**
 
-Made with ❤️ and 🧠 by Jaejin Yoon
+Made with ❤️ and 🧠 by GNJz
 
 ---
 

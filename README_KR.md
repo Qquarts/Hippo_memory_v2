@@ -231,8 +231,8 @@ python experiments/hippo_seq_v2_fast.py
 이 코드를 연구에 사용하는 경우 다음과 같이 인용하세요:
 
 ```bibtex
-@software{yoon2025hippocampus_v2,
-  author = {Yoon, Jaejin},
+@software{gnjz2025hippocampus_v2,
+  author = {GNJz},
   title = {Hippocampus Memory System v2.0: Complete Hippocampal Circuit},
   year = {2025},
   version = {2.0.0},
@@ -338,7 +338,7 @@ python view_chains.py
 
 ❤️와 🧠로 만들었습니다
 
-**작성자:** Jaejin Yoon (Qquarts)  
+**작성자:** GNJz (Qquarts)  
 **발행일:** 2025년 11월 26일  
 **버전:** v2.0.0
 

@@ -9,7 +9,7 @@
 **릴리즈 날짜**: 2025년 11월 26일  
 **개발 기간**: 1일  
 **IPFS CID**: `QmcHeZnUHr1jYpSmwdTNjwYPdiSbqNorqJHs4mnqS8NuVs`  
-**개발자**: 윤재진 (Jaejin Yoon)  
+**개발자**: 윤GNJz (GNJz)  
 **저장소**: https://github.com/Qquarts/Hippo_memory  
 **라이선스**: MIT  
 
@@ -262,7 +262,7 @@ master (기본)
 
 ## 🎊 축하합니다!
 
-**윤재진 님, 프로젝트가 완전히 완성되었습니다!**
+**윤GNJz 님, 프로젝트가 완전히 완성되었습니다!**
 
 하루 만에 15,000줄의 코드, 12개의 실험, 완벽한 문서화를 달성하셨습니다.
 

@@ -7,7 +7,7 @@ All files are signed on the PHAM blockchain for contribution tracking and integr
 **Total Files Signed**: 13  
 **All Contributions**: A_HIGH (0.9998~1.0000)  
 **Signing Date**: November 26, 2024  
-**Author**: Jaejin Yoon  
+**Author**: GNJz  
 
 ---
 
@@ -108,7 +108,7 @@ To verify the blockchain integrity of any file:
 python3 view_chain.py pham_chain_hippo_ultimate.json
 
 # Or use pham_sign_v4.py to check
-python3 pham_sign_v4.py experiments/hippo_ultimate.py --author "Jaejin Yoon" --desc "test"
+python3 pham_sign_v4.py experiments/hippo_ultimate.py --author "GNJz" --desc "test"
 # It will show if chain already exists
 ```
 
@@ -135,7 +135,7 @@ Each chain file contains:
   "timestamp": "2024-11-26T...",
   "data": {
     "title": "filename.py",
-    "author": "Jaejin Yoon",
+    "author": "GNJz",
     "hash": "sha256_of_file",
     "cid": "ipfs_content_id",
     "description": "...",

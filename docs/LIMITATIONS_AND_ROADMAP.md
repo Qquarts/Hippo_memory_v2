@@ -395,7 +395,7 @@ Anyone who reads the documentation will understand:
 
 ---
 
-**Author:** Jaejin Yoon (GNJz)  
+**Author:** GNJz (GNJz)  
 **Organization:** Qquarts  
 **License:** MIT  
 **Contact:** [Your contact info]

@@ -94,7 +94,7 @@ To migrate:
 
 ---
 
-## [v2.0.0] - 2024-11-26 - "Initial CA3 Release" (Legacy)
+## [v1.0.0] - 2024-11-26 - "Initial CA3 Release" (Legacy)
 
 ### 🎉 Major Release: Complete Hippocampal Circuit
 

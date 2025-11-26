@@ -233,7 +233,7 @@ If you use this code in your research, please cite:
 
 ```bibtex
 @software{hippocampus_memory_2024,
-  author = {Jaejin Yoon},
+  author = {GNJz},
   title = {Hippocampus Memory System: A Biologically Plausible SNN Implementation},
   year = {2024},
   url = {https://github.com/Qquarts/Hippo_memory}
